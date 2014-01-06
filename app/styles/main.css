@@ -1,0 +1,108 @@
+body {
+  background: #fff;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 62.5%;
+  margin: 0; }
+
+p, i {
+  font-size: 1.6em; }
+
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .navlist:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .navlist li {
+    display: inline-block;
+    float: left; }
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  min-height: 600px; }
+
+.header {
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #3297c9;
+  color: #fff;
+  text-align: center; }
+  .header h1, .header h3 {
+    margin: 0; }
+  .header h1 {
+    font-weight: 300;
+    font-size: 6em; }
+  .header h3 {
+    font-weight: 600;
+    font-size: 4em; }
+  .header .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -490px;
+    margin-top: -166px; }
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: 0;
+    z-index: 9999; }
+    .header.sticky .head_nav {
+      margin: 5px 0; }
+
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+.inline-block {
+  display: inline-block; }
+
+.head_nav {
+  margin: 25px auto 0 auto; }
+  .head_nav li {
+    text-align: left;
+    padding: 15px 20px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in;
+    cursor: pointer; }
+    .head_nav li:hover {
+      background: #2d88b5;
+      border-color: #fff; }
+    .head_nav li:active, .head_nav li.active {
+      background: #fff; }
+      .head_nav li:active a, .head_nav li.active a {
+        color: #3297c9; }
+    .head_nav li a {
+      text-decoration: none;
+      color: #fff; }
+    .head_nav li i {
+      margin-right: 5px; }
+    .head_nav li h6 {
+      display: inline-block;
+      font-size: 1.6em;
+      margin: 0; }
+    .head_nav li p {
+      margin: 10px 0 0 0;
+      font-size: 1.4em; }
+
+.btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  .btn.big {
+    font-size: 1.8em; }
+  .btn:hover {
+    background: #fff;
+    color: #3297c9; }
